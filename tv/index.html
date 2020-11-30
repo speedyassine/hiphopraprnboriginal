@@ -30,23 +30,28 @@
     </center>
 
     <script>
-        if (Hls.isSupported()) {
-            var video = document.getElementById('video');
-            var hls = new Hls({
-                debug: true
-            });
-            hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
-            hls.attachMedia(video);
-            hls.on(Hls.Events.MEDIA_ATTACHED, function() {
-                video.muted = true;
-                video.play();
-            });
-        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
-            video.addEventListener('canplay', function() {
-                video.play();
-            });
-        }
+        fetch('sources.json').then(r => r.text()).then(r => {
+            sources = eval(r);
+            source = sources[location.hash ? +location.hash.slice(1) : 0].source;
+
+            if (Hls.isSupported()) {
+                var video = document.getElementById('video');
+                var hls = new Hls({
+                    debug: true
+                });
+                hls.loadSource(source);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MEDIA_ATTACHED, function() {
+                    video.muted = true;
+                    video.play();
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = source;
+                video.addEventListener('canplay', function() {
+                    video.play();
+                });
+            }
+        })
     </script>
 </body>
 
