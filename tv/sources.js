@@ -1,4 +1,5 @@
 [{
+    name: "beIN SPORTS FullHD1",
     source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3221.m3u8"
 }, {
     name: "beIN SPORTS FullHD2",
