@@ -1,0 +1,30 @@
+[{
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3221.m3u8"
+}, {
+    name: "beIN SPORTS FullHD2",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3222.m3u8"
+}, {
+    name: "beIN SPORTS FullHD3",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3223.m3u8"
+}, {
+    name: "beIN SPORTS FullHD4",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3224.m3u8"
+}, {
+    name: "beIN SPORTS FullHD5",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3225.m3u8"
+}, {
+    name: "beIN SPORTS FullHD6",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3226.m3u8"
+}, {
+    name: "beIN SPORTS FullHD7",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3230.m3u8"
+}, {
+    name: "beIN SPORTS FullHD8",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3227.m3u8"
+}, {
+    name: "beIN SPORTS FullHD9",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3228.m3u8"
+}, {
+    name: "beIN SPORTS FullHD10",
+    source: "http://iptv.allkaicerteam.com:8080/live/alkaicer_1my6grpnft/bdrsgchizj/3229.m3u8"
+}]
