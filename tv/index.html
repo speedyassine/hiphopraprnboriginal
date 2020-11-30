@@ -32,7 +32,7 @@
     <script>
         fetch('sources.json').then(r => r.text()).then(r => {
             sources = eval(r);
-            source = sources[location.hash ? +location.hash.slice(1) : 0].source;
+            source = sources[location.hash ? location.hash.slice(1)*1-1 : 0].source;
 
             if (Hls.isSupported()) {
                 var video = document.getElementById('video');
